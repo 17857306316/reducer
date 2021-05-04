@@ -1,20 +1,39 @@
-import Father1 from "./Father1";
-import Father2 from "./Father2";
-import Son1 from "./Son1";
-import Son2 from "./Son2";
-import Class from "./Class";
+import React, { Component, useEffect } from "react";
+import axios from "axios";
+import { lib } from "react-single-app";
 
-function App() {
-  return (
-    <Class>
-      <Father1>
-        <Son1></Son1>
-      </Father1>
-      <Father2>
-        <Son2></Son2>
-      </Father2>
-    </Class>
-  );
+export default function App(params) {
+  useEffect(() => {
+    featchData();
+    featchDetail();
+  }, []);
+
+  async function featchData() {
+    try {
+      let res = await axios.get(
+        "https://www.fastmock.site/mock/addc05c591df87aae5c93e8c2504aa52/step01/step01"
+      );
+      let data = await axios({
+        method: "GET",
+        url:
+          "https://www.fastmock.site/mock/addc05c591df87aae5c93e8c2504aa52/step01/step02",
+        params: {
+          name: res.data.name,
+        },
+      });
+      console.log(data.data.age);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  async function featchDetail() {
+    let res = await axios.get(
+      "https://maria.yang800.com/api/data/v2/210",
+    );
+
+    console.log(res);
+  }
+
+  return <div>1</div>;
 }
-
-export default App;
