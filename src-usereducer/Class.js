@@ -14,8 +14,8 @@ const reducer = (state, action) => {
 export default function Class(params) {
     
   let classList = [
-    { list: "类目1", code: "1" },
-    { list: "类目2", code: "2" },
+    { list: "初始值1", code: "1" },
+    { list: "初始值2", code: "2" },
   ];
   const [value, dispatch] = useReducer(reducer, classList);
 

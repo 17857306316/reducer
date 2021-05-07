@@ -7,18 +7,9 @@ export default function Son2(params) {
     return useMemo(()=>{
         return ( <div>
             <div>Son1</div>
-            {value.map((item, index) => {
+            {value?.map((item, index) => {
               return <div key={item + index}>{item.list}</div>;
             })}
           </div>)
     },[value])
-
-  return (
-    <div>
-      <div>Son1</div>
-      {value.map((item, index) => {
-        return <div key={item + index}>{item.list}</div>;
-      })}
-    </div>
-  );
 }
