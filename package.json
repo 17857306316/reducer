@@ -36,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "axios": "^0.21.1",
-    "react-single-app": "^5.3.3"
+    "antd": "^4.15.4",
+    "axios": "^0.21.1"
   }
 }

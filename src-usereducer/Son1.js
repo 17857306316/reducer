@@ -16,7 +16,7 @@ export default function Son1(params) {
         id,
       },
       url:
-        "https://www.fastmock.site/mock/495c605110d1f99250ee41b56e5bc267/demo01/test",
+        "https://www.fastmock.site/mock/addc05c591df87aae5c93e8c2504aa52/step01/demo03",
     })
       .then((res) => {
           dispatch({type:CLASS_TYPE,value:res.data.data})
