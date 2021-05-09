@@ -35,5 +35,8 @@ export default function App(params) {
     console.log(res);
   }
 
-  return <div>1</div>;
+  return <div>
+    <input onChange={(e)=>console.log(e.target.value)}></input>
+    <button>点击</button>
+  </div>;
 }
