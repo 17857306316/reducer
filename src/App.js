@@ -1,7 +1,9 @@
 import { useRef } from 'react'
 import ChildComp from './ChildComp'
-import UseRef from './UseRef'
+import Element from './Element'
 import UseLayoutEffect from './UseLayoutEffect'
+import UseRef from './UseRef'
+import UpLoad from './Upload'
 export default function App() {
     const childRef = useRef();
     const updateChildState = () => {
@@ -21,6 +23,13 @@ export default function App() {
             <h1>3、UseLayoutEffect</h1>
 
             <UseLayoutEffect></UseLayoutEffect>
+
+            <h1>4、Element</h1>
+
+            <Element></Element>
+
+            <h1>4、Upload</h1>
+            <UpLoad></UpLoad>
 
 
         </>
