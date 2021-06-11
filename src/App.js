@@ -33,6 +33,7 @@ export default function App() {
 
             <h1>4、Upload</h1>
             <UpLoad></UpLoad>
+            <div>add something</div>
 
 
         </>
