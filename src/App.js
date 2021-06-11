@@ -8,7 +8,7 @@ export default function App() {
         // changeVal就是子组件暴露给父组件的方法
         childRef.current.changeVal(99);
     }
-    
+
     return (
         <>
             <h1>1、useImperativeHandle</h1>
@@ -23,6 +23,7 @@ export default function App() {
             
 
             <UseLayoutEffect></UseLayoutEffect>
+            <div>change something</div>
 
 
         </>
