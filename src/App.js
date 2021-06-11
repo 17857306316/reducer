@@ -35,7 +35,7 @@ export default function App() {
             <UpLoad></UpLoad>
             <div>add something</div>
             <div>im the develop</div>
-
+        <div>1</div>
 
         </>
     )
