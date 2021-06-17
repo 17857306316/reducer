@@ -3,7 +3,9 @@ import { useState, useImperativeHandle } from 'react';
 export default function ChildComp({ cRef }) {
     const [val, setVal] = useState();
     function rules(a) {
+        setVal(a)
         console.log(a);
+        return a
     }
     // 此处注意useImperativeHandle方法的的第一个参数是目标元素的ref引用
     useImperativeHandle(cRef, () => ({
@@ -13,6 +15,7 @@ export default function ChildComp({ cRef }) {
         }
     }));
     return (
-        <div>{val}</div>
-    )
+        <>
+          <div>{val}</div>
+        </>)
 }
