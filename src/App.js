@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useRef } from 'react'
 import ChildComp from './ChildComp'
 import Element from './Element'
@@ -37,25 +36,6 @@ export default function App() {
 
         </>
     )
-=======
-import Father1 from "./Father1";
-import Father2 from "./Father2";
-import Son1 from "./Son1";
-import Son2 from "./Son2";
-import Class from "./Class";
-
-function App() {
-  return (
-    <Class>
-      <Father1>
-        <Son1></Son1>
-      </Father1>
-      <Father2>
-        <Son2></Son2>
-      </Father2>
-    </Class>
-  );
->>>>>>> e2ec9d7dfd242cb2a0ea3aeb9c0520cfb36a71d9
 }
 
 export default App;
