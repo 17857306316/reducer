@@ -9,6 +9,7 @@ export default function App() {
     const updateChildState = () => {
         // changeVal就是子组件暴露给父组件的方法
         childRef.current.changeVal(99);
+        //1
     }
     return (
         <>
