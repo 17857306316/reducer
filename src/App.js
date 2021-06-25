@@ -11,6 +11,8 @@ export default function App() {
         childRef.current.changeVal(99);
         //1
         //2
+
+        // fixbug
     }
     return (
         <>
