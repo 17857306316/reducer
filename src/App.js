@@ -1,8 +1,14 @@
 
+import ShowArea from "./showArea";
+import Button from "./Button";
+import { Color } from './color'
 
 function App() {
   return (
-    1
+    <Color>
+      <ShowArea></ShowArea>
+      <Button></Button>
+    </Color>
   );
 }
 
