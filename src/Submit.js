@@ -11,7 +11,6 @@ export default function Submit() {
             console.log(values);
         })
     }
-    console.log(inputEl.current);
     return <>
         <Button ref={inputEl} onClick={() => dispatch({ type: 'add' })}>add</Button>
         <Button onClick={() => dispatch({ type: 'sub', })}>sub</Button>
