@@ -1,14 +1,16 @@
+import TableDetail from './Table'
+import { Context } from './Context'
+import Form1 from './Form1'
+import Submit from './Submit';
 
-import ShowArea from "./showArea";
-import Button from "./Button";
-import { Color } from './color'
 
 function App() {
   return (
-    <Color>
-      <ShowArea></ShowArea>
-      <Button></Button>
-    </Color>
+    <Context>
+      <Form1></Form1>
+      <TableDetail></TableDetail>
+      <Submit></Submit>
+    </Context>
   );
 }
 
